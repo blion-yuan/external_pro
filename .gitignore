@@ -1,0 +1,93 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+#verilog /db
+*.cdb
+*.hdb
+*.cmp.*
+*.asm.*
+*.tdf
+*.db_info
+*.qmsg
+*.hier_info
+*.rdb
+*.map*
+*.sci
+*.ddb
+*.tdf
+*.tmv_info
+*.ammdb
+*.xml
+*.kpt
+*.hsd
+*.hif
+*.qns
+*.tdb
+*.tmw_info
+*.flock
+video project
+*.vo
+*.sft
+*.sdo
+*.bak8
+*.bak9
+*.bak10
+*.qdb
+*.qpg
+*.qttl
+*.qtl
+*.bak7
+modelsim
+greybox_tmp
+
+
