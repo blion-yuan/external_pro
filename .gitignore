@@ -89,5 +89,5 @@ video project
 *.bak7
 modelsim
 greybox_tmp
-
+*.history
 
