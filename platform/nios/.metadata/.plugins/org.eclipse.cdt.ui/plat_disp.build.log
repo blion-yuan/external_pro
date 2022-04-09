@@ -1,0 +1,29 @@
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make mem_init_generate 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+Post-processing to create mem_init/palt_nios_ram.hex...
+bash -c 'elf2hex plat_disp.elf 0x00002000 0x00002fff --width=32 \
+		--little-endian-mem --create-lanes=0  mem_init/palt_nios_ram.hex'
+Post-processing to create mem_init/palt_nios_rom.hex...
+bash -c 'elf2hex plat_disp.elf 0x00003000 0x00003fff --width=32 \
+		--little-endian-mem --create-lanes=0  mem_init/palt_nios_rom.hex'
+Post-processing to create mem_init/hdl_sim/palt_nios_ram.dat...
+bash -c 'elf2dat --infile=plat_disp.elf --outfile=mem_init/hdl_sim/palt_nios_ram.dat \
+		--base=0x00002000 --end=0x00002fff --width=32 \
+		--little-endian-mem --create-lanes=0 '
+Post-processing to create mem_init/hdl_sim/palt_nios_rom.dat...
+bash -c 'elf2dat --infile=plat_disp.elf --outfile=mem_init/hdl_sim/palt_nios_rom.dat \
+		--base=0x00003000 --end=0x00003fff --width=32 \
+		--little-endian-mem --create-lanes=0 '
+Post-processing to create mem_init/hdl_sim/palt_nios_ram.sym...
+nios2-elf-nm -n plat_disp.elf > mem_init/hdl_sim/palt_nios_ram.sym
+Post-processing to create mem_init/hdl_sim/palt_nios_rom.sym...
+nios2-elf-nm -n plat_disp.elf > mem_init/hdl_sim/palt_nios_rom.sym
+Post-processing to create mem_init/meminit.spd...
+Post-processing to create mem_init/meminit.qip...
+
+**** Build Finished ****

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+<file path="hdl_sim/palt_nios_ram.dat" type="DAT" initParamName="INIT_FILE" memoryPath="ram" />
+<file path="hdl_sim/palt_nios_rom.dat" type="DAT" initParamName="INIT_FILE" memoryPath="rom" />
+<file path="palt_nios_ram.hex" type="HEX" initParamName="INIT_FILE" memoryPath="ram" />
+<file path="palt_nios_rom.hex" type="HEX" initParamName="INIT_FILE" memoryPath="rom" />
+</simPackage>
