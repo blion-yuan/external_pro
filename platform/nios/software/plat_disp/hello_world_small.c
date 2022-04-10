@@ -88,9 +88,9 @@
 #include "sys_call.h"
 #include "sys_task.h"
 
+
 int main()
 { 
-
 	uart0_init();
 	timer_init();
 

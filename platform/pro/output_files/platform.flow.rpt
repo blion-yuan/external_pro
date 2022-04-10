@@ -1,5 +1,5 @@
 Flow report for platform
-Sat Apr 09 20:59:35 2022
+Sun Apr 10 11:19:32 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 09 20:59:35 2022       ;
+; Flow Status                        ; Successful - Sun Apr 10 11:19:32 2022       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; platform                                    ;
 ; Top-level Entity Name              ; plat_top                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,082 / 6,272 ( 49 % )                      ;
-;     Total combinational functions  ; 2,727 / 6,272 ( 43 % )                      ;
-;     Dedicated logic registers      ; 1,887 / 6,272 ( 30 % )                      ;
-; Total registers                    ; 1887                                        ;
+; Total logic elements               ; 3,084 / 6,272 ( 49 % )                      ;
+;     Total combinational functions  ; 2,734 / 6,272 ( 44 % )                      ;
+;     Dedicated logic registers      ; 1,886 / 6,272 ( 30 % )                      ;
+; Total registers                    ; 1886                                        ;
 ; Total pins                         ; 7 / 92 ( 8 % )                              ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 114,560 / 276,480 ( 41 % )                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/09/2022 20:58:22 ;
+; Start date & time ; 04/10/2022 11:18:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; platform            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+------------------+
 ; Assignment Name                     ; Value                                                                 ; Default Value ; Entity Name ; Section Id       ;
 +-------------------------------------+-----------------------------------------------------------------------+---------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID               ; 5025755284274.164950910215940                                         ; --            ; --          ; --               ;
+; COMPILER_SIGNATURE_ID               ; 5025755284274.164956070010508                                         ; --            ; --          ; --               ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                           ; --            ; --          ; eda_simulation   ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                                                    ; <None>        ; --          ; --               ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                                  ; --            ; --          ; eda_simulation   ;
@@ -125,12 +125,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:41     ; 1.0                     ; 4834 MB             ; 00:00:40                           ;
-; Fitter                    ; 00:00:15     ; 3.1                     ; 6204 MB             ; 00:00:21                           ;
+; Analysis & Synthesis      ; 00:00:39     ; 1.0                     ; 4838 MB             ; 00:00:37                           ;
+; Fitter                    ; 00:00:14     ; 1.2                     ; 6201 MB             ; 00:00:21                           ;
 ; Assembler                 ; 00:00:02     ; 1.0                     ; 4606 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4854 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4856 MB             ; 00:00:05                           ;
 ; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4595 MB             ; 00:00:04                           ;
-; Total                     ; 00:01:06     ; --                      ; --                  ; 00:01:12                           ;
+; Total                     ; 00:01:02     ; --                      ; --                  ; 00:01:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

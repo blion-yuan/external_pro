@@ -49,3 +49,16 @@ alt_u32 get_tim_delta(alt_u32 oldTime, alt_u32 nowTime)
 	timeDelta = (nowTime >= oldTime )? (nowTime -oldTime):(nowTime + (0xffffffff - oldTime));
 	return timeDelta;
 }
+
+void delay_ms(alt_u16 ms)
+{
+	alt_u32 time;
+	alt_u32 diff;
+	time = get_tick_stamp();
+
+	do
+	{
+		diff = get_tim_delta(time,get_tick_stamp());
+		usleep(10);
+	}while(diff < ms);
+}

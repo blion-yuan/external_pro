@@ -27,3 +27,332 @@ Post-processing to create mem_init/meminit.spd...
 Post-processing to create mem_init/meminit.qip...
 
 **** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking plat_disp.elf
+nios2-elf-g++  -T'../plat_disp_bsp//linker.x' -msys-crt0='../plat_disp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../plat_disp_bsp/  -msmallc  -Wl,-Map=plat_disp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o plat_disp.elf obj/default/drive/src/sys_timer.o obj/default/drive/src/uart.o obj/default/hello_world_small.o obj/default/syscall/sys_call.o obj/default/syscall/sys_task.o -lm 
+nios2-elf-insert plat_disp.elf --thread_model hal --cpu_name sys_nios --qsys true --simulation_enabled false --id 8 --sidp 0x5070 --timestamp 1649502956 --stderr_dev uart0 --stdin_dev uart0 --stdout_dev uart0 --sopc_system_name palt_nios --quartus_project_dir "E:/external_pro/platform/nios" --sopcinfo E:/external_pro/platform/nios/palt_nios.sopcinfo
+Info: (plat_disp.elf) 3652 Bytes program size (code + initialized data).
+Info:                 408 Bytes free for stack + heap.
+Info: Creating plat_disp.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source plat_disp.elf >plat_disp.objdump
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking plat_disp.elf
+nios2-elf-g++  -T'../plat_disp_bsp//linker.x' -msys-crt0='../plat_disp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../plat_disp_bsp/  -msmallc  -Wl,-Map=plat_disp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o plat_disp.elf obj/default/drive/src/sys_timer.o obj/default/drive/src/uart.o obj/default/hello_world_small.o obj/default/syscall/sys_call.o obj/default/syscall/sys_task.o -lm 
+nios2-elf-insert plat_disp.elf --thread_model hal --cpu_name sys_nios --qsys true --simulation_enabled false --id 8 --sidp 0x5070 --timestamp 1649502956 --stderr_dev uart0 --stdin_dev uart0 --stdout_dev uart0 --sopc_system_name palt_nios --quartus_project_dir "E:/external_pro/platform/nios" --sopcinfo E:/external_pro/platform/nios/palt_nios.sopcinfo
+Info: (plat_disp.elf) 3644 Bytes program size (code + initialized data).
+Info:                 416 Bytes free for stack + heap.
+Info: Creating plat_disp.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source plat_disp.elf >plat_disp.objdump
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking plat_disp.elf
+nios2-elf-g++  -T'../plat_disp_bsp//linker.x' -msys-crt0='../plat_disp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../plat_disp_bsp/  -msmallc  -Wl,-Map=plat_disp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o plat_disp.elf obj/default/drive/src/sys_timer.o obj/default/drive/src/uart.o obj/default/hello_world_small.o obj/default/syscall/sys_call.o obj/default/syscall/sys_task.o -lm 
+nios2-elf-insert plat_disp.elf --thread_model hal --cpu_name sys_nios --qsys true --simulation_enabled false --id 8 --sidp 0x5070 --timestamp 1649502956 --stderr_dev uart0 --stdin_dev uart0 --stdout_dev uart0 --sopc_system_name palt_nios --quartus_project_dir "E:/external_pro/platform/nios" --sopcinfo E:/external_pro/platform/nios/palt_nios.sopcinfo
+Info: (plat_disp.elf) 3644 Bytes program size (code + initialized data).
+Info:                 416 Bytes free for stack + heap.
+Info: Creating plat_disp.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source plat_disp.elf >plat_disp.objdump
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+Info: Compiling drive/src/sys_timer.c to obj/default/drive/src/sys_timer.o
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/drive/src/sys_timer.o drive/src/sys_timer.c
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+Info: Compiling syscall/sys_call.c to obj/default/syscall/sys_call.o
+hello_world_small.c:95:10: warning: unused variable 'j' [-Wunused-variable]
+hello_world_small.c:94:9: warning: unused variable 'i' [-Wunused-variable]
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/syscall/sys_call.o syscall/sys_call.c
+Info: Linking plat_disp.elf
+nios2-elf-g++  -T'../plat_disp_bsp//linker.x' -msys-crt0='../plat_disp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../plat_disp_bsp/  -msmallc  -Wl,-Map=plat_disp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o plat_disp.elf obj/default/drive/src/sys_timer.o obj/default/drive/src/uart.o obj/default/hello_world_small.o obj/default/syscall/sys_call.o obj/default/syscall/sys_task.o -lm 
+nios2-elf-insert plat_disp.elf --thread_model hal --cpu_name sys_nios --qsys true --simulation_enabled false --id 8 --sidp 0x5070 --timestamp 1649502956 --stderr_dev uart0 --stdin_dev uart0 --stdout_dev uart0 --sopc_system_name palt_nios --quartus_project_dir "E:/external_pro/platform/nios" --sopcinfo E:/external_pro/platform/nios/palt_nios.sopcinfo
+Info: (plat_disp.elf) 3148 Bytes program size (code + initialized data).
+Info:                 912 Bytes free for stack + heap.
+Info: Creating plat_disp.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source plat_disp.elf >plat_disp.objdump
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+Info: Compiling drive/src/sys_timer.c to obj/default/drive/src/sys_timer.o
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/drive/src/sys_timer.o drive/src/sys_timer.c
+Info: Linking plat_disp.elf
+nios2-elf-g++  -T'../plat_disp_bsp//linker.x' -msys-crt0='../plat_disp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../plat_disp_bsp/  -msmallc  -Wl,-Map=plat_disp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o plat_disp.elf obj/default/drive/src/sys_timer.o obj/default/drive/src/uart.o obj/default/hello_world_small.o obj/default/syscall/sys_call.o obj/default/syscall/sys_task.o -lm 
+nios2-elf-insert plat_disp.elf --thread_model hal --cpu_name sys_nios --qsys true --simulation_enabled false --id 8 --sidp 0x5070 --timestamp 1649502956 --stderr_dev uart0 --stdin_dev uart0 --stdout_dev uart0 --sopc_system_name palt_nios --quartus_project_dir "E:/external_pro/platform/nios" --sopcinfo E:/external_pro/platform/nios/palt_nios.sopcinfo
+Info: (plat_disp.elf) 3620 Bytes program size (code + initialized data).
+Info:                 440 Bytes free for stack + heap.
+Info: Creating plat_disp.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source plat_disp.elf >plat_disp.objdump
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+hello_world_small.c: In function 'main':
+hello_world_small.c:95:10: warning: unused variable 'j' [-Wunused-variable]
+hello_world_small.c:94:9: warning: unused variable 'i' [-Wunused-variable]
+Info: Linking plat_disp.elf
+nios2-elf-g++  -T'../plat_disp_bsp//linker.x' -msys-crt0='../plat_disp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../plat_disp_bsp/  -msmallc  -Wl,-Map=plat_disp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o plat_disp.elf obj/default/drive/src/sys_timer.o obj/default/drive/src/uart.o obj/default/hello_world_small.o obj/default/syscall/sys_call.o obj/default/syscall/sys_task.o -lm 
+nios2-elf-insert plat_disp.elf --thread_model hal --cpu_name sys_nios --qsys true --simulation_enabled false --id 8 --sidp 0x5070 --timestamp 1649502956 --stderr_dev uart0 --stdin_dev uart0 --stdout_dev uart0 --sopc_system_name palt_nios --quartus_project_dir "E:/external_pro/platform/nios" --sopcinfo E:/external_pro/platform/nios/palt_nios.sopcinfo
+Info: (plat_disp.elf) 3692 Bytes program size (code + initialized data).
+Info:                 368 Bytes free for stack + heap.
+Info: Creating plat_disp.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source plat_disp.elf >plat_disp.objdump
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+Info: Compiling drive/src/uart.c to obj/default/drive/src/uart.o
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/drive/src/uart.o drive/src/uart.c
+Info: Compiling hello_world_small.c to obj/default/hello_world_small.o
+nios2-elf-gcc -xc -MP -MMD -c -I../plat_disp_bsp//HAL/inc -I../plat_disp_bsp/ -I../plat_disp_bsp//drivers/inc -Idrive/inc -Isyscall  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_NO_CLEAN_EXIT -D'exit(a)=_exit(a)' -DALT_NO_EXIT -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world_small.o hello_world_small.c
+Info: Linking plat_disp.elf
+nios2-elf-g++  -T'../plat_disp_bsp//linker.x' -msys-crt0='../plat_disp_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../plat_disp_bsp/  -msmallc  -Wl,-Map=plat_disp.map   -Os -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx  -o plat_disp.elf obj/default/drive/src/sys_timer.o obj/default/drive/src/uart.o obj/default/hello_world_small.o obj/default/syscall/sys_call.o obj/default/syscall/sys_task.o -lm 
+nios2-elf-insert plat_disp.elf --thread_model hal --cpu_name sys_nios --qsys true --simulation_enabled false --id 8 --sidp 0x5070 --timestamp 1649502956 --stderr_dev uart0 --stdin_dev uart0 --stdout_dev uart0 --sopc_system_name palt_nios --quartus_project_dir "E:/external_pro/platform/nios" --sopcinfo E:/external_pro/platform/nios/palt_nios.sopcinfo
+Info: (plat_disp.elf) 3692 Bytes program size (code + initialized data).
+Info:                 368 Bytes free for stack + heap.
+Info: Creating plat_disp.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source plat_disp.elf >plat_disp.objdump
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp_bsp ****
+
+make all 
+[BSP build complete]
+
+**** Build Finished ****
+
+**** Build of configuration Nios II for project plat_disp ****
+
+make all 
+Info: Building ../plat_disp_bsp/
+make --no-print-directory -C ../plat_disp_bsp/
+[BSP build complete]
+[plat_disp build complete]
+
+**** Build Finished ****

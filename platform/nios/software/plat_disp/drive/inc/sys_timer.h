@@ -16,5 +16,6 @@ void system_timer_isr(void*context);
 void timer_init(void);
 alt_u32 get_tick_stamp(void);
 alt_u32 get_tim_delta(alt_u32 oldTime, alt_u32 nowTime);
+void delay_ms(alt_u16 ms);
 
 #endif /* SYS_TIMER_H_ */

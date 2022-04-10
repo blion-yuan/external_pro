@@ -2,7 +2,7 @@ set_global_assignment -entity "palt_nios" -library "palt_nios" -name IP_TOOL_NAM
 set_global_assignment -entity "palt_nios" -library "palt_nios" -name IP_TOOL_VERSION "13.1"
 set_global_assignment -entity "palt_nios" -library "palt_nios" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "palt_nios" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../../palt_nios.sopcinfo"]
-set_global_assignment -entity "palt_nios" -library "palt_nios" -name SLD_INFO "QSYS_NAME palt_nios HAS_SOPCINFO 1 GENERATION_ID 1649509104"
+set_global_assignment -entity "palt_nios" -library "palt_nios" -name SLD_INFO "QSYS_NAME palt_nios HAS_SOPCINFO 1 GENERATION_ID 1649560703"
 set_global_assignment -name SYNTHESIS_ONLY_QIP ON
 set_global_assignment -library "palt_nios" -name MISC_FILE [file join $::quartus(qip_path) "../../../../nios/palt_nios.qsys"]
 
