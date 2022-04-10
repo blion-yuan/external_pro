@@ -15,7 +15,9 @@
 unsigned char code_tab[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0xff};
 alt_u8 rx_table[4]={0x69,0x05,0x00,0x7f};
 alt_u8 g_car_num = 0x05;
+
 alt_u8 g_car_speed;
+
 
 bool g_rx_bit =1;
 extern alt_u8 g_rx_data;
@@ -154,12 +156,26 @@ void car_polling(void)
 
 void car_num_polling(void)
 {
+	static alt_u8 old_car_num;
+	static alt_u8 old_car_speed;
 	if(show_bit == 1)
 	{
 		show_bit = 0;
-		oled_show_num16(104,0,g_car_num);
-		oled_show_num16(88,2,g_car_speed);
-		oled_show_num16(80,4,g_car_speed);
+		if(old_car_num != g_car_num)
+		{
+			oled_show_string16(104,0,"   ");
+			oled_show_num16(104,0,g_car_num);
+			old_car_num = g_car_num;
+		}
+
+		if(old_car_speed != g_car_speed)
+		{
+			oled_show_string16(88,2,"   ");
+			oled_show_num16(88,2,g_car_speed);
+			oled_show_string16(72,4,"   ");
+			oled_show_num16(72,4,g_car_speed);
+			old_car_speed = g_car_speed;
+		}
 	}
 }
 

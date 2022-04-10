@@ -2333,3 +2333,43 @@ org.eclipse.ui.PartInitException: Could not create view: org.eclipse.cdt.debug.u
 
 !ENTRY com.altera.sbtgui.launch 1 0 2022-04-10 20:35:27.126
 !MESSAGE Executing: [D:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x9070 --id=0x8 /cygdrive/e/external_pro/platform/nios/software/plat_disp/plat_disp.elf]
+!SESSION 2022-04-10 20:47:21.783 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-04-10 20:49:31.499
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-04-10 20:49:31.505
+!MESSAGE Executing: [D:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x9070 --id=0x8]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-04-10 20:49:34.662
+!MESSAGE Executing: [D:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x9070 --id=0x8 /cygdrive/e/external_pro/platform/nios/software/plat_disp/plat_disp.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-04-10 20:54:25.320
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-04-10 20:54:26.648
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-04-10 20:54:26.649
+!MESSAGE Executing: [D:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x9070 --id=0x8]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-04-10 20:54:29.834
+!MESSAGE Executing: [D:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x9070 --id=0x8 /cygdrive/e/external_pro/platform/nios/software/plat_disp/plat_disp.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-04-10 20:55:57.311
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2022-04-10 20:55:58.631
+!MESSAGE No Byte Stream Services found for Nios II Console View
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-04-10 20:55:58.632
+!MESSAGE Executing: [D:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x9070 --id=0x8]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2022-04-10 20:56:01.768
+!MESSAGE Executing: [D:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x9070 --id=0x8 /cygdrive/e/external_pro/platform/nios/software/plat_disp/plat_disp.elf]
