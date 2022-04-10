@@ -1,0 +1,13 @@
+module fre_top(
+	input  wire  		rst_n,
+	input  wire  		clk_i,
+	input  wire [1:0]	frehz_i,
+
+	output wire			SH_CP,
+	output wire 		ST_CP,
+	output wire 		DS
+	);
+	
+	
+	
+endmodule

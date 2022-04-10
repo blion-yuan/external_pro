@@ -1,0 +1,14 @@
+
+State Machine - |fre_top|fre_sure:u_fre1|main_sta
+Name main_sta.IDLE main_sta.CALC main_sta.PERID main_sta.UNIT 
+main_sta.IDLE 0 0 0 0 
+main_sta.UNIT 1 0 0 1 
+main_sta.PERID 1 0 1 0 
+main_sta.CALC 1 1 0 0 
+
+State Machine - |fre_top|fre_sure:u_fre0|main_sta
+Name main_sta.IDLE main_sta.CALC main_sta.PERID main_sta.UNIT 
+main_sta.IDLE 0 0 0 0 
+main_sta.UNIT 1 0 0 1 
+main_sta.PERID 1 0 1 0 
+main_sta.CALC 1 1 0 0 
