@@ -3,7 +3,7 @@
 # Machine generated for CPU 'sys_nios' in SOPC Builder design 'palt_nios'
 # SOPC Builder design path: E:/external_pro/platform/nios/palt_nios.sopcinfo
 #
-# Generated: Sat Apr 09 15:58:25 CST 2022
+# Generated: Sun Apr 10 16:56:00 CST 2022
 
 # DO NOT MODIFY THIS FILE
 #
@@ -47,7 +47,7 @@
 # by allowing GDB to cache memory contents on the host.
 
 # ram
-memory 0x2000 0x3000 cache
+memory 0x4000 0x6000 cache
 
 # rom
-memory 0x3000 0x4000 cache
+memory 0x6000 0x8000 cache

@@ -24,7 +24,7 @@
    {
       datum baseAddress
       {
-         value = "20592";
+         value = "36976";
          type = "String";
       }
    }
@@ -40,7 +40,7 @@
    {
       datum baseAddress
       {
-         value = "18432";
+         value = "34816";
          type = "String";
       }
    }
@@ -84,11 +84,11 @@
          type = "int";
       }
    }
-   element rom.s1
+   element sys_timer.s1
    {
       datum baseAddress
       {
-         value = "12288";
+         value = "36928";
          type = "String";
       }
    }
@@ -96,15 +96,7 @@
    {
       datum baseAddress
       {
-         value = "8192";
-         type = "String";
-      }
-   }
-   element sys_timer.s1
-   {
-      datum baseAddress
-      {
-         value = "20544";
+         value = "16384";
          type = "String";
       }
    }
@@ -112,7 +104,7 @@
    {
       datum baseAddress
       {
-         value = "20480";
+         value = "36864";
          type = "String";
       }
    }
@@ -120,7 +112,15 @@
    {
       datum baseAddress
       {
-         value = "20576";
+         value = "36960";
+         type = "String";
+      }
+   }
+   element rom.s1
+   {
+      datum baseAddress
+      {
+         value = "24576";
          type = "String";
       }
    }
@@ -128,7 +128,7 @@
    {
       datum baseAddress
       {
-         value = "20512";
+         value = "36896";
          type = "String";
       }
    }
@@ -305,8 +305,8 @@
   <parameter name="ocimem_ramBlockType" value="Automatic" />
   <parameter name="mmu_ramBlockType" value="Automatic" />
   <parameter name="bht_ramBlockType" value="Automatic" />
-  <parameter name="instAddrWidth" value="15" />
-  <parameter name="dataAddrWidth" value="15" />
+  <parameter name="instAddrWidth" value="16" />
+  <parameter name="dataAddrWidth" value="16" />
   <parameter name="tightlyCoupledDataMaster0AddrWidth" value="1" />
   <parameter name="tightlyCoupledDataMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledDataMaster2AddrWidth" value="1" />
@@ -315,8 +315,8 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='ram.s1' start='0x2000' end='0x3000' /><slave name='rom.s1' start='0x3000' end='0x4000' /><slave name='sys_nios.jtag_debug_module' start='0x4800' end='0x5000' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='ram.s1' start='0x2000' end='0x3000' /><slave name='rom.s1' start='0x3000' end='0x4000' /><slave name='sys_nios.jtag_debug_module' start='0x4800' end='0x5000' /><slave name='gpio1.s1' start='0x5000' end='0x5020' /><slave name='uart0.s1' start='0x5020' end='0x5040' /><slave name='sys_timer.s1' start='0x5040' end='0x5060' /><slave name='led.s1' start='0x5060' end='0x5070' /><slave name='sysid.control_slave' start='0x5070' end='0x5078' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='ram.s1' start='0x4000' end='0x6000' /><slave name='rom.s1' start='0x6000' end='0x8000' /><slave name='sys_nios.jtag_debug_module' start='0x8800' end='0x9000' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='ram.s1' start='0x4000' end='0x6000' /><slave name='rom.s1' start='0x6000' end='0x8000' /><slave name='sys_nios.jtag_debug_module' start='0x8800' end='0x9000' /><slave name='gpio1.s1' start='0x9000' end='0x9020' /><slave name='uart0.s1' start='0x9020' end='0x9040' /><slave name='sys_timer.s1' start='0x9040' end='0x9060' /><slave name='led.s1' start='0x9060' end='0x9070' /><slave name='sysid.control_slave' start='0x9070' end='0x9078' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone IV E" />
   <parameter name="internalIrqMaskSystemInfo" value="3" />
@@ -343,7 +343,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="4096" />
+  <parameter name="memorySize" value="8192" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
   <parameter name="simMemInitOnlyFilename" value="0" />
@@ -370,7 +370,7 @@
   <parameter name="initMemContent" value="true" />
   <parameter name="initializationFileName" value="onchip_mem.hex" />
   <parameter name="instanceID" value="NONE" />
-  <parameter name="memorySize" value="4096" />
+  <parameter name="memorySize" value="8192" />
   <parameter name="readDuringWriteMode" value="DONT_CARE" />
   <parameter name="simAllowMRAMContentsFile" value="false" />
   <parameter name="simMemInitOnlyFilename" value="0" />
@@ -460,7 +460,7 @@
    start="sys_nios.instruction_master"
    end="sys_nios.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x4800" />
+  <parameter name="baseAddress" value="0x8800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -469,7 +469,7 @@
    start="sys_nios.data_master"
    end="sys_nios.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x4800" />
+  <parameter name="baseAddress" value="0x8800" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -478,7 +478,7 @@
    start="sys_nios.data_master"
    end="rom.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3000" />
+  <parameter name="baseAddress" value="0x6000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -487,7 +487,7 @@
    start="sys_nios.data_master"
    end="ram.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2000" />
+  <parameter name="baseAddress" value="0x4000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -496,7 +496,7 @@
    start="sys_nios.data_master"
    end="led.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5060" />
+  <parameter name="baseAddress" value="0x9060" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -505,7 +505,7 @@
    start="sys_nios.data_master"
    end="sys_timer.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5040" />
+  <parameter name="baseAddress" value="0x9040" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -514,7 +514,7 @@
    start="sys_nios.data_master"
    end="sysid.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5070" />
+  <parameter name="baseAddress" value="0x9070" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -523,7 +523,7 @@
    start="sys_nios.instruction_master"
    end="rom.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x3000" />
+  <parameter name="baseAddress" value="0x6000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -532,7 +532,7 @@
    start="sys_nios.instruction_master"
    end="ram.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x2000" />
+  <parameter name="baseAddress" value="0x4000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="13.1" start="clk_0.clk" end="led.clk" />
@@ -583,7 +583,7 @@
    start="sys_nios.data_master"
    end="uart0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5020" />
+  <parameter name="baseAddress" value="0x9020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="reset" version="13.1" start="clk_0.clk_reset" end="uart0.reset" />
@@ -603,7 +603,7 @@
    start="sys_nios.data_master"
    end="gpio1.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x5000" />
+  <parameter name="baseAddress" value="0x9000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />

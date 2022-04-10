@@ -13,8 +13,7 @@ void car_polling(void);
 void speed_polling(void);
 void sure_polling(void);
 
-#define CP_L IOWR_ALTERA_AVALON_PIO_DATA(CP_BASE,0)
-#define CP_H IOWR_ALTERA_AVALON_PIO_DATA(CP_BASE,1)
+void car_num_polling(void);
 
 
 #endif /* SYS_TASK_H_ */

@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>13.1</BspVersion>
-        <BspGeneratedTimeStamp>2022-4-9 19:42:57</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1649504577766</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2022-4-10 20:21:46</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1649593306058</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>E:\external_pro\platform\nios\software\plat_disp_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>E:\external_pro\platform\nios\palt_nios.sopcinfo</SopcDesignFile>
@@ -864,43 +864,43 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>ram</slaveDescriptor>
-                <addressRange>0x00002000 - 0x00002FFF</addressRange>
-                <addressSpan>4096</addressSpan>
+                <addressRange>0x00004000 - 0x00005FFF</addressRange>
+                <addressSpan>8192</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>rom</slaveDescriptor>
-                <addressRange>0x00003000 - 0x00003FFF</addressRange>
-                <addressSpan>4096</addressSpan>
+                <addressRange>0x00006000 - 0x00007FFF</addressRange>
+                <addressSpan>8192</addressSpan>
                 <attributes>memory, non-volatile</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>gpio1</slaveDescriptor>
-                <addressRange>0x00005000 - 0x0000501F</addressRange>
+                <addressRange>0x00009000 - 0x0000901F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>uart0</slaveDescriptor>
-                <addressRange>0x00005020 - 0x0000503F</addressRange>
+                <addressRange>0x00009020 - 0x0000903F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sys_timer</slaveDescriptor>
-                <addressRange>0x00005040 - 0x0000505F</addressRange>
+                <addressRange>0x00009040 - 0x0000905F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>led</slaveDescriptor>
-                <addressRange>0x00005060 - 0x0000506F</addressRange>
+                <addressRange>0x00009060 - 0x0000906F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x00005070 - 0x00005077</addressRange>
+                <addressRange>0x00009070 - 0x00009077</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>

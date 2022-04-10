@@ -4,7 +4,7 @@
  * Machine generated for CPU 'sys_nios' in SOPC Builder design 'palt_nios'
  * SOPC Builder design path: E:/external_pro/platform/nios/palt_nios.sopcinfo
  *
- * Generated: Sat Apr 09 15:58:25 CST 2022
+ * Generated: Sun Apr 10 16:56:00 CST 2022
  */
 
 /*
@@ -65,14 +65,14 @@
  *
  */
 
-#define RAM_BEFORE_EXCEPTION_REGION_BASE 0x2000
+#define RAM_BEFORE_EXCEPTION_REGION_BASE 0x4000
 #define RAM_BEFORE_EXCEPTION_REGION_SPAN 32
-#define RAM_REGION_BASE 0x2020
-#define RAM_REGION_SPAN 4064
-#define RESET_REGION_BASE 0x3000
+#define RAM_REGION_BASE 0x4020
+#define RAM_REGION_SPAN 8160
+#define RESET_REGION_BASE 0x6000
 #define RESET_REGION_SPAN 32
-#define ROM_REGION_BASE 0x3020
-#define ROM_REGION_SPAN 4064
+#define ROM_REGION_BASE 0x6020
+#define ROM_REGION_SPAN 8160
 
 
 /*

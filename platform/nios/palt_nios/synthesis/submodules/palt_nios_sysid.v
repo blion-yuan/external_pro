@@ -36,7 +36,7 @@ module palt_nios_sysid (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1649502956 : 8;
+  assign readdata = address ? 1649580841 : 8;
 
 endmodule
 

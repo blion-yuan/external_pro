@@ -18,6 +18,7 @@
 #define CYC_CALL_CHNNL_1		(1)
 #define CYC_CALL_CHNNL_2		(2)
 #define CYC_CALL_CHNNL_3		(3)
+#define CYC_CALL_CHNNL_4		(4)
 
 #define CALL_POLL_5MS		2/SYS_TIMEER_BASE_MS
 #define CALL_POLL_10MS		10/SYS_TIMEER_BASE_MS

@@ -10,14 +10,16 @@
 #include "altera_avalon_pio_regs.h"
 //#include "altera_avalon_uart_regs.h"
 #include <stdbool.h>
+#include "oled.h"
 
 unsigned char code_tab[]={0xc0,0xf9,0xa4,0xb0,0x99,0x92,0x82,0xf8,0x80,0x90,0xff};
 alt_u8 rx_table[4]={0x69,0x05,0x00,0x7f};
-alt_u8 g_car_num;
+alt_u8 g_car_num = 0x05;
 alt_u8 g_car_speed;
-alt_u8 g_rx_num =0;
+
 bool g_rx_bit =1;
 extern alt_u8 g_rx_data;
+static bool show_bit =1;
 
 void led_polling(void)
 {
@@ -34,17 +36,6 @@ void led_polling(void)
 		IOWR_ALTERA_AVALON_PIO_DATA(LED_BASE, led);
 
 }
-
-alt_u8 get_car_num()
-{
-	return rx_table[1];
-}
-
-alt_u8 get_speed_num()
-{
-	return rx_table[2];
-}
-
 
 void disp_sel(alt_u8 num,alt_u8 sel_num)
 {
@@ -64,7 +55,6 @@ void disp_sel(alt_u8 num,alt_u8 sel_num)
 		}
 
 		IOWR_ALTERA_AVALON_PIO_DATA(GPIO1_BASE,gpio_sta);
-
 		gpio_sta = gpio_sta | 0x01;
 		IOWR_ALTERA_AVALON_PIO_DATA(GPIO1_BASE,gpio_sta);
 		dat<<=1;
@@ -102,6 +92,7 @@ void sure_polling(void)
 		{
 			g_car_num = rx_table[2];
 			g_car_speed = rx_table[1];
+			show_bit = 1;
 		}
 	}
 
@@ -156,9 +147,19 @@ void car_polling(void)
 	}
 	else
 	{
-//		car_num = get_car_num();
 		disp_sel(g_car_num,num);
 		num = 1;
+	}
+}
+
+void car_num_polling(void)
+{
+	if(show_bit == 1)
+	{
+		show_bit = 0;
+		oled_show_num16(104,0,g_car_num);
+		oled_show_num16(88,2,g_car_speed);
+		oled_show_num16(80,4,g_car_speed);
 	}
 }
 

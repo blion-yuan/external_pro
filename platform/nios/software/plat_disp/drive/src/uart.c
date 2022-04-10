@@ -14,7 +14,7 @@
 #include <unistd.h>
 
 
-extern bool g_rx_bit;
+extern  bool g_rx_bit;
 
 alt_u8 g_rx_data;
 void uart0_isr(void*context)

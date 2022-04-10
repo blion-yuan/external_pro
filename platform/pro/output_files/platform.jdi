@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="967d4c783fad8f7e93bd"/>
+    <hash md5_digest_80b="0f0685e1f939bc890024"/>
   </project>
   <file_info>
     <file device="EP4CE6E22C8" path="platform.sof" usercode="0xFFFFFFFF"/>
@@ -142,7 +142,7 @@
   <sld_infos>
     <sld_info hpath="palt_nios:u0" name="u0">
       <assignment_values>
-        <assignment_value text="QSYS_NAME palt_nios HAS_SOPCINFO 1 GENERATION_ID 1649560703"/>
+        <assignment_value text="QSYS_NAME palt_nios HAS_SOPCINFO 1 GENERATION_ID 1649594174"/>
       </assignment_values>
       <parameters/>
     </sld_info>

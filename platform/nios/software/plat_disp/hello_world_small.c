@@ -87,17 +87,22 @@
 #include "drive/inc/sys_timer.h"
 #include "sys_call.h"
 #include "sys_task.h"
-
+#include "drive/inc/OLED.h"
 
 int main()
 { 
-	uart0_init();
-	timer_init();
 
+	timer_init();
+	oled_init(); //OLED≥ı ºªØ
+	oled_show_string16(0,0,"CAR NUM:  220");
+	oled_show_string16(0,2,"DISTANCE:     M");
+	oled_show_string16(0,4,"TIME:       MIN");
+	uart0_init();
 	cyc_call_cfg(CYC_CALL_CHNNL_0, CALL_POLL_500MS, led_polling);
-	cyc_call_cfg(CYC_CALL_CHNNL_1, CALL_POLL_5MS, car_polling);
+//	cyc_call_cfg(CYC_CALL_CHNNL_1, CALL_POLL_5MS, car_polling);
 	cyc_call_cfg(CYC_CALL_CHNNL_2, CALL_POLL_100MS, sure_polling);
-	cyc_call_cfg(CYC_CALL_CHNNL_3, CALL_POLL_5MS, speed_polling);
+	cyc_call_cfg(CYC_CALL_CHNNL_3, CALL_POLL_500MS, car_num_polling);
+//	cyc_call_cfg(CYC_CALL_CHNNL_4, CALL_POLL_5MS, speed_polling);
 	while(1)
 	{
 		cyc_call_poll();

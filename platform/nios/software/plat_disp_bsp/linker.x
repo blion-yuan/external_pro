@@ -4,7 +4,7 @@
  * Machine generated for CPU 'sys_nios' in SOPC Builder design 'palt_nios'
  * SOPC Builder design path: E:/external_pro/platform/nios/palt_nios.sopcinfo
  *
- * Generated: Sat Apr 09 15:58:25 CST 2022
+ * Generated: Sun Apr 10 16:56:00 CST 2022
  */
 
 /*
@@ -50,15 +50,15 @@
 
 MEMORY
 {
-    ram_BEFORE_EXCEPTION : ORIGIN = 0x2000, LENGTH = 32
-    ram : ORIGIN = 0x2020, LENGTH = 4064
-    reset : ORIGIN = 0x3000, LENGTH = 32
-    rom : ORIGIN = 0x3020, LENGTH = 4064
+    ram_BEFORE_EXCEPTION : ORIGIN = 0x4000, LENGTH = 32
+    ram : ORIGIN = 0x4020, LENGTH = 8160
+    reset : ORIGIN = 0x6000, LENGTH = 32
+    rom : ORIGIN = 0x6020, LENGTH = 8160
 }
 
 /* Define symbols for each memory base-address */
-__alt_mem_ram = 0x2000;
-__alt_mem_rom = 0x3000;
+__alt_mem_ram = 0x4000;
+__alt_mem_rom = 0x6000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -387,7 +387,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x3000;
+__alt_data_end = 0x6000;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -403,4 +403,4 @@ PROVIDE( __alt_stack_limit   = __alt_stack_base );
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0x3000 );
+PROVIDE( __alt_heap_limit    = 0x6000 );

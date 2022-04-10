@@ -147,6 +147,8 @@ C_SRCS += drive/src/sys_timer.c
 C_SRCS += drive/src/uart.c
 C_SRCS += syscall/sys_call.c
 C_SRCS += syscall/sys_task.c
+C_SRCS += drive/src/i2c.c
+C_SRCS += drive/src/oled.c
 CXX_SRCS :=
 ASM_SRCS :=
 
