@@ -90,4 +90,4 @@ video project
 modelsim
 greybox_tmp
 *.history
-
+*Objects
